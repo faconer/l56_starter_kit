@@ -2,11 +2,9 @@
 
 namespace Core\Services;
 
-interface BookServiceContract
+use Core\Services\Base\BaseServiceContract;
+
+interface BookServiceContract extends BaseServiceContract
 {
-    public function paginate();
-    public function find($id);
-    public function store($data);
-    public function update($id, $data);
-    public function destroy($id);
+
 }

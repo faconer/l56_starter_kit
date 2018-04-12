@@ -2,11 +2,9 @@
 
 namespace Core\Repositories;
 
-interface BookRepositoryContract
+use Core\Repositories\Base\BaseRepositoryContract;
+
+interface BookRepositoryContract extends BaseRepositoryContract
 {
-    public function paginate();
-    public function find($id);
-    public function store($data);
-    public function update($id, $data);
-    public function destroy($id);
+
 }
