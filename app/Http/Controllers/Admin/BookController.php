@@ -29,6 +29,7 @@ class BookController extends Controller
     public function store(CreateBookRequest $request)
     {
         $this->service->store($request->all());
+        flash('Book created!')->success();
         return redirect()->route('books.index');
     }
 
@@ -47,12 +48,14 @@ class BookController extends Controller
     public function update(EditBookRequest $request, $id)
     {
         $this->service->update($id, $request->all());
+        flash('Book updated!')->success();
         return redirect()->route('books.index');
     }
 
     public function destroy($id)
     {
         $this->service->destroy($id);
+        flash('Book deleted!')->important();
         return redirect()->route('books.index');
     }
 
