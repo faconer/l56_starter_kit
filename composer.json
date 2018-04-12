@@ -1,6 +1,6 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
+    "name": "laraviet/l56_starter_kit",
+    "description": "Starter Kit with some default packages",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
