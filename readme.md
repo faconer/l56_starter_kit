@@ -22,4 +22,6 @@ All code almost inside `core` folder with
 - Sample binding in CoreServiceProvider
 
 # Road
+- Apply Routing test
 - Apply theme
+- Apply scaffold package
